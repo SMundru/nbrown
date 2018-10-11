@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <title>F1 Dashboard</title>
+  <script src="/webjars/jquery/3.1.1/jquery.min.js"></script>
+  <script src="/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js"></script>
+  <link rel='stylesheet' href='/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css'>
+  <script src="get-standing.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="jumbotron">
+    <h1>F1 Dashboard</h1>
+    <p>FormulaOne Team and Driver Standing for 2018</p>
+    <sup class="col-lg-offset-8">- Source: https://www.f1-fansite.com</sup>
+  </div>
+    <div class="col-lg-6">
+      <h2 class="sub-header">Drivers - Top 10</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-hover">
+          <thead>
+          <tr>
+            <th>
+              Driver Name
+            </th>
+            <th>
+              Total Points
+            </th>
+          </tr>
+          </thead>
+          <tbody id="drivers-table-body">
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div>
+      <div class="col-lg-6">
+        <h2 class="sub-header">Teams - Top 5</h2>
+        <div class="table-responsive">
+          <table class="table table-striped table-hover">
+            <thead>
+            <tr>
+              <th>
+                Team Name
+              </th>
+              <th>
+                Total Points
+              </th>
+            </tr>
+            </thead>
+            <tbody id="teams-table-body">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
